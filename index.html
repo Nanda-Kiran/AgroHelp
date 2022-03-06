@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon (1).ico">
+    <title>Agro-chat</title>
+</head>
+<body>
+    <!-- <a href="main.html" class="home_link">HOME</a> -->
+        <div class="top-bar">
+            <h1>
+                Agro-Chat
+            </h1>
+
+        </div>
+        <div class="main">
+            <ol>
+            </ol>
+        </div>
+        <script src="data.js"></script>
+        <script>
+            console.log(threads);
+            var container = document.querySelector('ol');
+            for (let thread of threads) {
+                var html = `
+                <div class="container1">
+                <li class="row">
+                    <a href="/thread.html?${thread.id}">
+                        <h4 class="title">
+                            Agriculture ${thread.id} 
+                        </h4>
+                        <div class="bottom">
+                            <p class="timestamp">
+                                ${new Date(thread.date).toLocaleString()}
+                            </p>
+                            <p class="comment-count">
+                                ${thread.comments.length} comments
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                </div>
+                `
+                container.insertAdjacentHTML('beforeend', html);
+            }
+        </script>
+        <style>
+            *{
+                margin: 0;padding: 0;
+            }
+            body {
+                margin: 10px 60px;
+                background-image: url("istockphoto-1292399669-170667a.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .container1{
+                /* border: 3px solid black; */
+                padding: 8px;
+                margin: 3px 0px;
+                background-color: rgba(76, 185, 76,0.6);
+                position: relative;
+                left: -4%;
+                border-radius: 13px;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+            h1, ol {
+                margin: 0;
+            }
+            h4{
+                font-size: large;
+                margin: 3px;
+            }
+            p {
+                margin: 5px 0;
+            }
+            .top-bar {
+                background-color: rgb(33, 128, 33,0.7);
+                color: yellow;
+                padding: 0 20px;
+                border-radius:14px;
+                margin-left: -40px;
+                width: 95%;
+            }
+            .main {
+                /* background-color: #F6F6EF; */
+                padding: 10px 15px;
+                /* color: black; */
+            }
+            .row {
+                padding: 5px 0;
+            }
+            .bottom {
+                display: flex;
+                color: gray;
+                /* color: white; */
+                /* font-size: 30px; */
+                font-size: 15px;
+            }
+            .timestamp {
+                padding-right: 10px;
+            }
+            .title{
+                color: crimson;
+            }
+            ol{
+                list-style: none;
+            }
+            /* .home_link{
+                font-size: 35px;
+            } */
+        </style>
+</body>
+</html>

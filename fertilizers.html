@@ -1,0 +1,316 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="favicon (1).ico">
+    <title>Updates on Fertillizers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            /* background-image: url('https://images.unsplash.com/photo-1630992866107-e3265545dc39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8ZmVydGlsaXplcnx8fHx8fDE2NDY0ODQ5NDc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+        }
+
+        body h1 {
+            text-align: center;
+            font-size: 50px;
+            font-family: cursive;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: rgb(24, 86, 148);
+
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            /* background: teal; */
+            padding: 15px;
+        }
+
+        .container img {
+            width: 100%;
+            display: block;
+            /* -webkit-filter: grayscale(1);
+  filter: grayscale(1); */
+            transition: all 100ms ease-out;
+        }
+
+        .container img:hover {
+            transform: scale(1.04);
+            cursor: pointer;
+            /* -webkit-filter: grayscale(0); */
+            /* filter: grayscale(0); */
+        }
+
+        .card {
+            /* border: 2px solid white; */
+            /*margin: 0px 10px;*/
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 5px;
+            
+        }
+
+
+        /* Footer */
+
+        .footer {
+            /* background-color: #222; */
+            color: #fff;
+            font-size: 14px;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 999;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            font-family: 'Raleway', 'Lucida Sans Regular', 'Lucida  Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .footer .fa-heart {
+            color: red;
+        }
+
+        .footer .fa-codepen {
+            color: #fff
+        }
+
+        .footer a {
+            color: #3c97bf;
+            text-decoration: none;
+            margin-right: 5px;
+        }
+
+        .card-img-top {
+            height: 300px;
+            width: 300px;
+            /* margin: 4px; */
+            /* margin-left: 10px;
+            margin-right: 10px; */
+            border-radius: 10px;
+            align-self: center;
+            align-items: center;
+        }
+
+        .card-text {
+            margin: 10px;
+            
+            text-align: center;
+        }
+
+        .title1 {
+            text-align: center;
+        }
+        .heading a{
+            text-decoration: none;
+            color: rgb(9, 56, 104);
+            padding: 5px;
+            position: relative;
+            top: 95px;
+            left: 30px;
+            font-size: 25px;
+            border: 3px solid rgb(9, 56, 104);;
+        }
+        .heading a:hover{
+            color: white;
+            background-color: rgb(6, 27, 48);;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+        <a href="main.html">HOME</a> 
+        <h1>Updates on fertilizer</h1>
+    </div>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/india-in-talks-on-multi-year-fertiliser-import-deal-with-russia/articleshow/89328028.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-89328043,width-300,imgsize-92672,,resizemode-4,quality-100/fertilizer.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">India in talks on multi-year fertiliser import deal with Russia</h3>
+                <!-- <b class="card-text">India in talks on multi-year fertiliser import deal with Russia</b> -->
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/fertiliser-subsidy-for-2022-23-is-less-than-expected-says-icra/articleshow/89280894.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-89281104,width-300,imgsize-1144235,,resizemode-4,quality-100/agri.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Fertiliser subsidy for 2022-23 is less than expected, says ICRA</h3>
+                <!-- <p class="card-text">Powdery mildew is a fungal disease that affects many of our landscape plants, flowers, vegetables and fruits.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/budget-agrochem-pesticide-sector-urge-govt-to-increase-fund-flow-to-the-agri-sector/articleshow/89013602.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-89013630,width-300,imgsize-114184,,resizemode-4,quality-100/agrichemicals-bccl.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Budget: Agrochem, pesticide sector urge govt to increase fund flow to the agri sector</h3>
+                <!-- <p class="card-text">Downy mildew refers to any of several types of oomycete microbes that are obligate parasites of plants.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/news/economy/policy/government-plans-19-billion-fertilizer-subsidy-in-union-budget-fy23/articleshow/88948912.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-88948933,width-300,imgsize-101602,,resizemode-4,quality-100/agriculture-getty.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Government plans $19 billion fertilizer subsidy in Union Budget FY23: Sources</h3>
+                <!-- <p class="card-text">Blight is a plant disease, typically one caused by fungi such as mildews, rusts, and smuts.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/markets/stocks/recos/buy-rashtriya-chemicals-amp-fertilizers-target-price-rs-95-5-hdfc-securities/articleshow/88944297.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-88944316,width-210,imgsize-523157,,resizemode-4,quality-100/buy.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Buy Rashtriya Chemicals & Fertilizers, target price Rs 95.5: HDFC Securities</h3>
+                <!-- <p class="card-text">Canker, plant disease, caused by numerous species of fungi and bacteria, that occurs primarily on woody species.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/small-biz/trade/exports/insights/from-india-to-south-korea-this-chemical-is-in-short-supply/articleshow/88135285.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-88135306,width-300,imgsize-125186,,resizemode-4,quality-100/istock-503646746.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">From India to South Korea, this chemical is in short supply</h3>
+                <!-- <p class="card-text">Tar spot caused by Phyllachora maydis Maubl., an obligate fungus, is a major foliar disease of corn. </p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/black-market-for-fertilizers-is-booming-in-india-as-prices-soar/articleshow/87972990.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-87972968,width-300,imgsize-209780,,resizemode-4,quality-100/1-bccl.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Black market for fertilizers is booming in India as prices soar</h3>
+                <!-- <p class="card-text">Sooty mold is a fungal disease that grows on plants and other surfaces covered by honeydew, a sticky substance created by certain insects.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/no-shortage-of-fertilisers-states-should-prevent-diversion-monitor-supplies-daily-centre/articleshow/87869551.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-87869532,width-300,imgsize-42720,,resizemode-4,quality-100/fertiliser.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">No shortage of fertilisers; states should prevent diversion, monitor supplies daily: Centre</h3>
+                <!-- <p class="card-text">Chlorosis is a yellowing of leaf tissue due to a lack of chlorophyll. Causes of chlorosis include damaged roots, nutrient deficiencies etc., in the plant.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/markets/stocks/earnings/national-fertilizers-q2-results-net-profit-declines-81-to-rs-16-cr/articleshow/87675090.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-87675103,width-210,imgsize-249846,,resizemode-4,quality-100/fertilizer3-bccl.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">National Fertilizers Q2 results: Net profit declines 81% to Rs 16 cr</h3>
+                <!-- <p class="card-text">Gymnosporangium rusts are a group of closely related diseases caused by fungi that infect both junipers (in particular red cedar) and woody plants in the rose family.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/chemicals-fertilizers-ministry-to-launch-various-activities-to-celebrate-azadi-ka-amrit-mahotsav/articleshow/86728259.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-86728288,width-300,imgsize-69762,,resizemode-4,quality-100/mansukh-mandaviya-pti.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Chemicals, fertilizers ministry to launch various activities to celebrate Azadi ka Amrit Mahotsav</h3>
+                <!-- <p class="card-text">Black Knot, caused by the fungus Apiosporina morbosa, is a very common disease of plants in the genus Prunus.</p> -->
+            </div>
+        <!-- </div>        <div class="card" style="width: 18rem;">
+            <a href="https://pddc.wisc.edu/2021/03/06/elderberry-rust/">
+
+                <img class="card-img-top"
+                    src="https://dtk9tvco613fv.cloudfront.net/wp-content/uploads/sites/39/2021/04/ElderberryRust-TenCommonPlantDiseases.png"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Elderberry Rust</h3>
+                <p class="card-text"> Elderberry rust is a visually striking fungal disease that affects stems, leaves and flowers of plants in the genus Sambucus (i.e., elderberries).</p>
+            </div> -->
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/news/india/fertilizers-price-hike-will-hurt-farm-sector-telangana-cm-k-chandrashekhar-rao/articleshow/88856788.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-88856852,width-300,imgsize-129216,,resizemode-4,quality-100/hyderabad-chief-minister-of-telangana-k-chandrashekar-rao-addresses-a-press-co-.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Fertilizers' 'price hike' will hurt farm sector: Telangana CM K Chandrashekhar Rao</h3>
+                <!-- <p class="card-text">Dog vomit slime mold (Fuligo septica) might appear to be a fungus, but it's actually not--it's a type of slime mold in the Kingdom Protista, not Fungi.</p> -->
+            </div>
+        </div>        <div class="card" style="width: 18rem;">
+            <a href="https://economictimes.indiatimes.com/industry/indl-goods/svs/chem-/-fertilisers/target-commercial-production-of-nano-dap-within-a-year-mansukh-mandaviya-to-fertiliser-makers/articleshow/86097776.cms">
+
+                <img class="card-img-top"
+                    src="https://img.etimg.com/thumb/msid-86098075,width-300,imgsize-55478,,resizemode-4,quality-100/1.jpg"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Target commercial production of Nano DAP within a year: Mansukh Mandaviya to fertiliser makers</h3>
+                <!-- <p class="card-text">Peach leaf curl, also known as leaf curl, is a disease caused by the fungus Taphrina deformans. </p> -->
+            </div>
+        <!-- </div>        <div class="card" style="width: 18rem;">
+            <a href="https://hort.extension.wisc.edu/articles/golden-canker-cryptodiaporthe-canker/">
+
+                <img class="card-img-top"
+                    src="https://dtk9tvco613fv.cloudfront.net/wp-content/uploads/sites/39/2021/04/GoldenCanker-TenCommonPlantDiseases.png"
+                    alt="Card image cap">
+            </a>
+            <div class="card-body">
+                <h3 class="title1">Golden Canker</h3>
+                <p class="card-text">Golden canker (officially Cryptodiaporthe canker) is a visually distinct and increasingly common disease of alternate-leafed dogwoods such as pagoda dogwood.</p>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</body>
+
+</html>
